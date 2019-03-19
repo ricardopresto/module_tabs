@@ -1,3 +1,5 @@
+export { main_page, second_page, third_page };
+
 const main_page = function() {
   const headline = document.createElement("h1");
   headline.textContent = "Headline";
@@ -20,13 +22,51 @@ const main_page = function() {
 
   const content = document.getElementById("content");
 
+  while (content.firstChild) {
+    content.removeChild(content.firstChild);
+  }
+
   content.appendChild(headline);
   content.appendChild(main_image);
   content.appendChild(body_text);
 };
 
-const second_page = function() {};
+const second_page = function() {
+  const headline = document.createElement("h1");
+  headline.textContent = "Second Page";
+  const main_image = document.createElement("img");
+  main_image.src = "../dist/sunflowers.jpg";
+  main_image.style.opacity = "0.5";
+  const body_text = document.createElement("p");
+  body_text.textContent = `Nothing much to see here...`;
 
-const third_page = function() {};
+  const content = document.getElementById("content");
 
-export { main_page, second_page, third_page };
+  while (content.firstChild) {
+    content.removeChild(content.firstChild);
+  }
+
+  content.appendChild(headline);
+  content.appendChild(main_image);
+  content.appendChild(body_text);
+};
+
+const third_page = function() {
+  const headline = document.createElement("h1");
+  headline.textContent = "Third Page";
+  const main_image = document.createElement("img");
+  main_image.src = "../dist/sunflowers.jpg";
+  main_image.style.opacity = "0.1";
+  const body_text = document.createElement("p");
+  body_text.textContent = `Almost gone!`;
+
+  const content = document.getElementById("content");
+
+  while (content.firstChild) {
+    content.removeChild(content.firstChild);
+  }
+
+  content.appendChild(headline);
+  content.appendChild(main_image);
+  content.appendChild(body_text);
+};

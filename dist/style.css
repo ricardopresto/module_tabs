@@ -1,2 +1,14 @@
 #tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tab {
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: lightgray;
+  border-radius: 6px;
 }

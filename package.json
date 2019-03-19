@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ricardopresto/module_tabs#readme",
   "devDependencies": {
+    "eslint": "^5.15.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }
